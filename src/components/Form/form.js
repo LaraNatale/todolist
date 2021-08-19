@@ -17,9 +17,11 @@ const Form = (props) => {
   const isTaskDefined = () => task==="";
 
  return (
-    <form onSubmit={props.setItemsList}>
-        <input type="text" placeholder="Add a task" onChange={handleInputTask} value={task} />
-        <button type="submit" onClick={addItem} disabled={isTaskDefined()}>Add</button>
+    <form className="form-wrapper" onSubmit={props.setItemsList}>
+        <input className="text-style" type="text" placeholder="Add a task" onChange={handleInputTask} value={task} />
+        <button className="mdc-button mdc-button--raised button-style" type="submit" onClick={addItem} disabled={isTaskDefined()}>
+          <span className="mdc-button__label">Add</span>
+        </button>
     </form>
  )
 }

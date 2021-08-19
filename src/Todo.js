@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import List from './components/List/list';
 import Form from './components/Form/form';
+import '../src/todo.css';
+import './components/Form/form.css';
 
 const Todo = () => {
   
@@ -17,7 +19,7 @@ const Todo = () => {
 
   return (
     <div className="todo-wrapper">
-      <h1>TO DO List</h1>
+      <h1 className="todo-title">To Do List</h1>
       
       <Form onAddItem={onAddItem}/>
       <List items={itemsList} onDelete={deleteItem}/>  

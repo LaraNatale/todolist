@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+.todo-wrapper {
+    margin-left: 25rem;
+    margin-right: 25rem;
+    margin-top: 3rem;
+    border-width: medium;
+    border-style: solid;
+    border-color: #03DAC6;
+    border-radius: 2rem;
+    width: auto;
+    height: auto;
+}
+
+.todo-title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 5rem;
+    color: #6200EE;
+    margin-bottom: 0;
+    margin-left: 5rem;
+    margin-top: 1rem;
+}
+
