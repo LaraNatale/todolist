@@ -4,13 +4,12 @@ import '../List/list.css';
 const List = (props) => {
 
 
- return(
+ return( 
         <ul className="todo-list">
             {props.items.map(item => (
             <li className="item-style" >
                 <input type="checkbox" />{item}
-                <button key = {item} onClick={props.onDelete(item)}>Delete
-                </button>
+                <button key = {item} onClick={props.onDelete(item)}>Delete</button>
             </li> ))}
         </ul>
     )

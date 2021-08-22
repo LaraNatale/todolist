@@ -17,12 +17,13 @@ const Todo = () => {
     setItemsList(filteredList);
   }
 
+
   return (
     <div className="todo-wrapper">
       <h1 className="todo-title">To Do List</h1>
       
       <Form onAddItem={onAddItem}/>
-      <List items={itemsList} onDelete={deleteItem}/>  
+      <List items={itemsList} onDelete={deleteItem} />  
     </div>
   );
 }
