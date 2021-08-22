@@ -1,15 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Work+Sans:wght@300&display=swap');
 
 .form-wrapper {
-    margin-left: 8rem;
+    margin-left: 13.5rem;
 }
 
 .text-style {
-    height: 1.75rem;
+    height: 2rem;
     font-family: 'Work Sans', sans-serif;
     font-weight: bold;
     font-size: 1rem;
 }
+
+input[type=text] {
+    border: none;
+    border-bottom: 2px solid #03DAC6;
+    border-radius: .17rem;
+  }
 
 .button-style {
     margin-left: .5rem;

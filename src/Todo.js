@@ -12,7 +12,7 @@ const Todo = () => {
     setItemsList([...itemsList, newItem]);
   }
 
-  const deleteItem = (item) => {
+  const deleteItem = (item) => (state) => {
     const filteredList = itemsList.filter(i => i!==item);
     setItemsList(filteredList);
   }
