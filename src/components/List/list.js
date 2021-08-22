@@ -6,7 +6,8 @@ const List = (props) => {
 
  return(
         <ul className="todo-list">
-            {props.items.map(item => (<li className="item-style" key = {item} onClick={props.onDelete(item)}>{item}</li> ))}
+            {props.items.map(item => (<li className="item-style" >{item}<button key = {item} onClick={props.onDelete(item)}>Delete</button></li> ))}
+            
         </ul>
     )
 }
